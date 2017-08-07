@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+  	<ion-buttons left>
+      <!-- <button ion-button icon-only (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button> -->
+    </ion-buttons>
+    <ion-title>DDAM - Inicio</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <h1 class="primary">Bienvenido</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-avatar item-left>
+          <div [innerHTML] = "'<span>' + resultado[3] + '</span>'"></div>
+        </ion-avatar>
+        <ion-badge item-end>Nivel <div [innerHTML] = "'<span>' + resultado[2] + '</span>'"></div></ion-badge>
+        <h2>{{resultado[0]}}</h2>
+      </ion-item>
+      <img src="../assets/backtothefuture.png">
+    </ion-card-content>
+  </ion-card>
+</ion-content>
