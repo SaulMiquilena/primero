@@ -1,0 +1,20 @@
+Saludos.
+
+Este proyecto fue realizado con Ionic.
+
+En la carpeta del proyecto hay un archivo llamado ionic.config.json, en el configuré una proxy:
+"proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://localhost/cliente-restful"
+    }
+  ]
+
+Esto para poder correr la aplicación en local y evitar el problema de CORS que ocasionaba error 
+para consultar el servicio REST corriendo en WAMP.
+
+Los usuarios y contraseñas usados son los que existen en la base de datos del cliente restful, 
+"yiyi" - "4321" y "camila" - "1234" respectivamente.
+
+La aplicación realiza consulta a "buscarusuario.php".
+
